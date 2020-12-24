@@ -1,6 +1,6 @@
 # CS_Notes
 
-This is personal record and reflection for me when learning different topics in computer science. 
+This is a set of personal record and reflection for me when learning different topics in computer science. 
 
 Some possible topics which would be updated later are:
 
