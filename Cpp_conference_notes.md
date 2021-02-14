@@ -35,18 +35,26 @@ This document is created to record the comments and remarks while watching the v
 | The canonical class                                            | Michael Caisse      | Move semantics        | Some advices on how to correctly adpot the feature of Move.                                                                                                                                                                            | :star::star::star:       |  |
 
 ## **CPP Con 2015**
-| Title                                                           | Author                     | Category                   | Comment                                                                                            | Rank                     |
-| --------------------------------------------------------------- | -------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------ |
-| std::allocator is to allocation what std::vector is to vexation | Andrei Alexandrescu        | Allocator                  | Different type of allocators. How to correctly implement and use them.                             | :star::star::star::star: |
-| Declarative control flow                                        | Andrei Alexandrescu        | Exception                  | Scoped macro to write beautiful exception-safe code.                                               | :star::star::star:       |
-| Writing good C++ 14                                             | Bjarne Stroustrup          | Best practice              | An intro to guideline for writing good C++14, this guideline is now publicly accessable in github. | :star::star::star:       |
-| Writing Good C++14... By Default                                | Herb Sutter                | Best practice              |
-| Evolving array_view and string_view for safer C++ code          | Neil Macintosh             | String_view and array_view | Intro to string_view/array_view, a draft implemented by microsoft.                                 | :star::star::star:       |
-| Static Analysis and C++ More than lint                          | Neil Macintosh             | Static analysis tool       | Intro to static anylysis tool that can be used to detect some hard-to-found bugs.                  | :star::star:             |
+| Title                                                           | Author                     | Category                   | Comment                                                                                                                                      | Rank                     |
+| --------------------------------------------------------------- | -------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| std::allocator is to allocation what std::vector is to vexation | Andrei Alexandrescu        | Allocator                  | Different type of allocators. How to correctly implement and use them.                                                                       | :star::star::star::star: |
+| Declarative control flow                                        | Andrei Alexandrescu        | Exception                  | Scoped macro to write beautiful exception-safe code.                                                                                         | :star::star::star:       |
+| Writing good C++ 14                                             | Bjarne Stroustrup          | Best practice              | An intro to guideline for writing good C++14, this guideline is now publicly accessable in github.                                           | :star::star::star:       |
+| Writing Good C++14... By Default                                | Herb Sutter                | Best practice              | Intro to static analysis tools developed by Microsoft, which could detect many hidden bugs at compile time with the help of some annotation. | :star::star::star:       |
+| Evolving array_view and string_view for safer C++ code          | Neil Macintosh             | String_view and array_view | Intro to string_view/array_view, a draft implemented by microsoft.                                                                           | :star::star::star:       |
+| Static Analysis and C++ More than lint                          | Neil Macintosh             | Static analysis tool       | Intro to static anylysis tool that can be used to detect some hard-to-found bugs.                                                            | :star::star:             |
 | C++ in Open Source Robotics                                     | Jackie Kay & Louise Poubel | ROS                        |
 | C++11/14/17 atomics and memory model                            | Michael Wong               | Memory model               |
 | C++ atomics                                                     | Paul E. McKenney           | Atomics                    |
 | string_view                                                     | Marshall Clow              | String                     |
+| Concurrenty TS editor's report                                  | Arthur Laksberg            | Concurrency                | Intro to the new features added to the C++ Concurrency support: continue/latch/barries/atomic shapred_ptr.                                   | :star::star::star:       |
+| Lambdas from first principles A whirlwind tour of C++           | Arthur O'Dywer             | Lambda                     |
+| Tuning C++ benchamarks and CPUs and Compilers                   | Chandler Carruth           | Benchmarking               |
+| Executors for C++ A long story                                  | Detlef Vollmann            | Executor                   |
+| The unexceptional exceptions                                    | Fedor G.Pikus              | Exception                  |
+| C++ corountines: a negative overhead abstraction                | Gor Noshanov               | Coroutines                 | Intro to coroutines.                                                                                                                         | :star::star::star:       |
+| Reflection techniques in C++                                    | Paul Fultz                 | Reflection                 |
+
 
 ## **CPP Con 2016**
 | Title                                         | Author            | Category    | Comment | Rank |
