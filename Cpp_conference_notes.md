@@ -69,76 +69,117 @@ This document is created to record the comments and remarks while watching the v
 | Reflection techniques in C++                                    | Paul Fultz                 | Reflection                 | Compile-time reflection techniques in C++, difference approaches including boost.fusion, boost.hana and and pure macros.                                                                                                                                                                                                                                                                                                                   | :star::star:             |
 
 ## **CPP Con 2016**
-| Title                                                                             | Author                                       | Category    | Comment                                                                                                                                                                                                                                                           | Rank                     |
-| --------------------------------------------------------------------------------- | -------------------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| The evolution of C++ Past, Present and Future                                     | Bjarne Stroustrup                            | History     |
-| Leak-freedom in C++...                                                            | Herb Sutter                                  | Leak safety | Intro to memory leak safety. Illustration on which measure to take in odrer to achieve lifetime guarantees including scoped lifetime management/unique_ptr/shared_ptr and deffered_ptr(proposed to automatically manage the the reachability/tracing of objects). | :star::star::star::star: |
-| Introduction to C++ Coroutines                                                    | James McNellis                               | Coroutine   | Intro to coroutine implementation by Microsoft Visual C++, more code and example.                                                                                                                                                                                 | :star::star::star:       |
-| C++ coroutines under the hood                                                     | Gor Nishanov                                 | Coroutine   | Optimization in LLVM Coroutines that produces the more efficient assembler code.                                                                                                                                                                                  | :star::star::star:       |
-| Channels: an alternative to callbacks and futures                                 | John Bandela                                 | Coroutine   | Implementation of Go channel in cpp via coroutine.                                                                                                                                                                                                                | :star::star::star:       |
-| The continuing future of C++ concurrency                                          | Anthony Williams                             | Concurrency | Intro to concurrency in C++14/C++17 and TS that might come into standard librayry in C++20.                                                                                                                                                                       | :star::star::star:       |
-| A Chrono tutorial - it's about time                                               | Howard Hinnant                               | Library     |
-| Asynchronous IO with Boost.Asio                                                   | Michael Caisse                               | Async IO    | Intro to Asio.                                                                                                                                                                                                                                                    | :star::star::star:       |
-| Elegant asynchronous code                                                         | Nat Goodspeed                                | Async       | Intro to fiber in boost.                                                                                                                                                                                                                                          | :star::star:             |
-| A lock-free concurrency toolkit for defred reclamation and optimistic speculation | Paul E.Mckenney, Maged Michael, Michael Wong | Concurrency |
-| GDB: a lot more than you knew                                                     | Greg Law                                     | GDB         |
+| Title                                                                             | Author                                       | Category                  | Comment                                                                                                                                                                                                                                                           | Rank                     |
+| --------------------------------------------------------------------------------- | -------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| The evolution of C++ Past, Present and Future                                     | Bjarne Stroustrup                            | History                   | A very general introduction to the history of C++ and its future.                                                                                                                                                                                                 | :star::star::star:       |
+| Leak-freedom in C++...                                                            | Herb Sutter                                  | Leak safety               | Intro to memory leak safety. Illustration on which measure to take in odrer to achieve lifetime guarantees including scoped lifetime management/unique_ptr/shared_ptr and deffered_ptr(proposed to automatically manage the the reachability/tracing of objects). | :star::star::star::star: |
+| Introduction to C++ Coroutines                                                    | James McNellis                               | Coroutine                 | Intro to coroutine implementation by Microsoft Visual C++, more code and example.                                                                                                                                                                                 | :star::star::star:       |
+| C++ coroutines under the hood                                                     | Gor Nishanov                                 | Coroutine                 | Optimization in LLVM Coroutines that produces the more efficient assembler code.                                                                                                                                                                                  | :star::star::star:       |
+| Channels: an alternative to callbacks and futures                                 | John Bandela                                 | Coroutine                 | Implementation of Go channel in cpp via coroutine.                                                                                                                                                                                                                | :star::star::star:       |
+| The continuing future of C++ concurrency                                          | Anthony Williams                             | Concurrency               | Intro to concurrency in C++14/C++17 and TS that might come into standard librayry in C++20.                                                                                                                                                                       | :star::star::star:       |
+| A Chrono tutorial - it's about time                                               | Howard Hinnant                               | Library                   |
+| Asynchronous IO with Boost.Asio                                                   | Michael Caisse                               | Async IO                  | Intro to Asio.                                                                                                                                                                                                                                                    | :star::star::star:       |
+| Elegant asynchronous code                                                         | Nat Goodspeed                                | Async                     | Intro to fiber in boost.                                                                                                                                                                                                                                          | :star::star:             |
+| A lock-free concurrency toolkit for defred reclamation and optimistic speculation | Paul E.Mckenney, Maged Michael, Michael Wong | Concurrency               |
+| GDB: a lot more than you knew                                                     | Greg Law                                     | GDB                       |
+| extern "C": talking to C programmer about C++                                     | Dan Saks                                     | General                   |
+| Deloying C++ modules to 100s of millions of lines of code                         | Manuel Klimek                                | Module                    |
+| Towars Heterogeneous programmming in C++                                          | Gordon Brown                                 | Heterogeneous programming |
+| Variants: past, present and future                                                | David Sankel                                 | Variant                   |
+| Putting Coroutines to work with the Windows runtime                               | Kenny Kerr                                   | Coroutine                 |
+| The strange details of std::string at Facebook                                    | Nicholas Ormrod                              | String                    |
+| The speed of cocurrency: is lock-free faster?                                     | Fedor Pikus                                  | Concurrency               |
+| Garbage in, garbage out: arguing about undefiend behavior with nasal demons       | Chandler Carruth                             | Undefiend behavior        |
+| C++ costless abstractions: the compiler view                                      | Serge Guelton                                | Compiler optimization     |
+| C++ reflections without macros maekup nor external tooling                        | Anthony Polukhin                             | Reflection                |
 
 
 
 ## **CPP Con 2017**
-| Title                                               | Author            | Category       | Comment                                        | Rank               |
-| --------------------------------------------------- | ----------------- | -------------- | ---------------------------------------------- | ------------------ |
-| Allocators: the good parts                          | Pablo Halpern     | Allocator      | More implementation details of STL allocators. | :star::star::star: |
-| Meta: thoughts on generative C++                    | Herb Sutter       | General        |
-| Learning and teaching modern C++                    | Bjarne Stroustrup | General        |
-| An allocator model for std2                         | Alisdair Meredith | Allocator      |
-| The nightmare of move semantics for trivial classes | Nicolai Josuttis  | Move semantics |
+| Title                                               | Author            | Category              | Comment                                                  | Rank               |
+| --------------------------------------------------- | ----------------- | --------------------- | -------------------------------------------------------- | ------------------ |
+| Allocators: the good parts                          | Pablo Halpern     | Allocator             | More implementation details of STL allocators.           | :star::star::star: |
+| Meta: thoughts on generative C++                    | Herb Sutter       | General               |
+| Learning and teaching modern C++                    | Bjarne Stroustrup | General               |
+| An allocator model for std2                         | Alisdair Meredith | Allocator             |
+| The nightmare of move semantics for trivial classes | Nicolai Josuttis  | Move semantics        |
+| C++ atomics: from basic to advanced                 | Fedor Pikus       | Atomic                |
+| What has my compiler done for me lately?            | Matt Godbolt      | Compiler Optimization |
+| Is parallel programming still hard part 1&2         | Michael Wong      | Parallel programming  |
+| Concurrency, Parallelism and Coroutines             | Anthony Williams  | Concurrency           | Intro to new feature of concurrency library since C++14. | :star::star:       |
+
 ## **CPP Con 2018**
-| Title                                               | Author              | Category       | Comment                                           | Rank               |
-| --------------------------------------------------- | ------------------- | -------------- | ------------------------------------------------- | ------------------ |
-| An Allocator is a handle to a heap                  | Arthur O'Dwyer      | Allocator      | Allocators are really handle to memory resources. | :star::star::star: |
-| Concepts: the future of generic programming         | Bjarne Stroustrup   | Concept        |
-| Thoughts on a more powerful and simpler C++(5 of N) | Herb Sutter         | General        |
-| The nightmare of initialization in C++              | Nicolai Josuttis    | Initialization |
-| Expect the expected                                 | Andrei Alexandrescu |
+| Title                                                   | Author              | Category       | Comment                                           | Rank               |
+| ------------------------------------------------------- | ------------------- | -------------- | ------------------------------------------------- | ------------------ |
+| An Allocator is a handle to a heap                      | Arthur O'Dwyer      | Allocator      | Allocators are really handle to memory resources. | :star::star::star: |
+| Concepts: the future of generic programming             | Bjarne Stroustrup   | Concept        |
+| Thoughts on a more powerful and simpler C++(5 of N)     | Herb Sutter         | General        |
+| The nightmare of initialization in C++                  | Nicolai Josuttis    | Initialization |
+| Expect the expected                                     | Andrei Alexandrescu |
+| Spectre: secrets, side channels, sandboxes and security | Chandler Carruth    |
+| Undo: debuggin linux C++                                | Greg Law            | Debug          |
+| The nightmare of initialization in C++                  | Nicolai Josuttis    | Initialization |
+| Return value optimization: harder than it looks         | Arthur O'Dwyer      | RVO            |
+| The networking TS in practice                           | Robert Leahy        | Networking     |
 
 
 
 ## **CPP Con 2019**
-| Title                                                                     | Author                            | Category         | Comment                        | Rank               |
-| ------------------------------------------------------------------------- | --------------------------------- | ---------------- | ------------------------------ | ------------------ |
-| C++20: C++ at 40                                                          | Bjarne Stroustrup                 | General          |
+| Title                                                                     | Author                            | Category             | Comment                        | Rank               |
+| ------------------------------------------------------------------------- | --------------------------------- | -------------------- | ------------------------------ | ------------------ |
+| C++20: C++ at 40                                                          | Bjarne Stroustrup                 | General              |
 | Speeds in found in the minds of people                                    | Andrei Alexandrescu               |
 | De-fragmenting C++: Making exceptions and RTTI more affordable and usable | Herb Sutter                       |
-| Getting Allocators out of our way                                         | Pablo Halpern & Alisdair Meredith | Allocators       |
-| Back to basics: virtual dispatch and its alternatives                     | Inbal Levi                        | Virtual function |
-| Back to basics: RAII and rule of zero                                     | Arthur O'Dwyer                    | RAII             |
-| Back to basics: move semantics                                            | Klaus Iglberger                   | Move semantics   |
-| Back to basics: Const as a promise                                        | Dan Saks                          | Const            |
+| Getting Allocators out of our way                                         | Pablo Halpern & Alisdair Meredith | Allocators           |
+| Back to basics: virtual dispatch and its alternatives                     | Inbal Levi                        | Virtual function     |
+| Back to basics: RAII and rule of zero                                     | Arthur O'Dwyer                    | RAII                 |
+| Back to basics: move semantics                                            | Klaus Iglberger                   | Move semantics       |
+| Back to basics: Const as a promise                                        | Dan Saks                          | Const                |
 | Back to basics: Understanding value Categories                            | Ben Saks                          |
-| Back to basics: exception handling and exception handling                 | Ben Saks                          | Exception        |
-| Back to basics: lambda from scratch                                       | Arthur O'Dwyer                    | Lambda           |
-| Back to basics: type erasure                                              | Arthur O'Dywer                    | Type             |
-| Back to basics: in-place construction                                     | Ben deane                         | Constructor      |
-| Back to basics: Object-oriented programming                               | Jon Kalb                          | OOP              |
-| Back to basics: funtion and class templates                               | Dan saks                          | Templates        |
-| Back to basics: smart pointers                                            | Arthur O'Dwyer                    | Smart pointer    | An overview of smart pointers. | :star::star::star: |
+| Back to basics: exception handling and exception handling                 | Ben Saks                          | Exception            |
+| Back to basics: lambda from scratch                                       | Arthur O'Dwyer                    | Lambda               |
+| Back to basics: type erasure                                              | Arthur O'Dywer                    | Type                 |
+| Back to basics: in-place construction                                     | Ben deane                         | Constructor          |
+| Back to basics: Object-oriented programming                               | Jon Kalb                          | OOP                  |
+| Back to basics: funtion and class templates                               | Dan saks                          | Templates            |
+| Back to basics: smart pointers                                            | Arthur O'Dwyer                    | Smart pointer        | An overview of smart pointers. | :star::star::star: |
+| Applied WebAssembly: Compiling and running C++ in your web brower         | Ben Smith                         | WebAssembly          |
+| Better code: relationships                                                | Sean Parent                       | Data structure       |
+| Range Algorithm, views and actions                                        | Dvir Yitzchaki                    | Range                |
+| From STL to ranges                                                        | Jeff Garland                      | Range                |
+| Behind the scenes of a C++ build system                                   | Jussi Pakkanen                    | Build system         |
+| Reducing template compilation overhead                                    | Jorg Brown                        | Template programming |
+| Everyday efficiency: in-place construction                                | Ben Deane                         | Initialization       |
+| Cocurrency in C++20 and beyond                                            | Anthony William                   | Cocurrency           |
+
 
 ## **CPP Con 2020**
-| Title                                              | Author                           | Category         | Comment | Rank |
-| -------------------------------------------------- | -------------------------------- | ---------------- | ------- | ---- |
-| 40 years of evolution from functions to coroutines | Rainer Grimm                     | Coroutine        |
-| Plenary: the beauty and power of "primitive" C++   | Bjarne Stroustrup                | General          |
-| The hidden secrets of move semantics               | Nicolai Josuttis                 | Move semantics   |
-| C++20: An(almost) complete overview                | Marc Gregoire                    | General          |
-| Back to basics: the abstract machine               | Bob Steagall                     | Abstract machine |
-| Back to basics: the structure of a program         | Bob Steagall                     | Program layout   |
-| Back to basics: the class layout                   | Stephen Dewhurst                 | Class layout     |
-| Back to basics: templates part 1&2                 | Andreas Fertig                   | Template         |
-| Back to basics: algebraic data types               | Arthur O'Dwyer                   | Datatype         |
-| Back to basics: lambda expressions                 | Barbara Geller, Ansel Semersheim | Lambda           |
-| Back to basics: unit tests                         | Ben Saks                         | Unit test        |
-| Back to basics: design patterns                    | Mike Shah                        | Design pattern   |
-| Back to basics: move semantics                     | David Olsen                      | Move semantics   |
-| Back to basics: cocurrency                         | Arthur O'Dwyer                   | Cocurrency       |
-
+| Title                                                       | Author                           | Category             | Comment | Rank |
+| ----------------------------------------------------------- | -------------------------------- | -------------------- | ------- | ---- |
+| 40 years of evolution from functions to coroutines          | Rainer Grimm                     | Coroutine            |
+| Plenary: the beauty and power of "primitive" C++            | Bjarne Stroustrup                | General              |
+| The hidden secrets of move semantics                        | Nicolai Josuttis                 | Move semantics       |
+| C++20: An(almost) complete overview                         | Marc Gregoire                    | General              |
+| Back to basics: the abstract machine                        | Bob Steagall                     | Abstract machine     |
+| Back to basics: the structure of a program                  | Bob Steagall                     | Program layout       |
+| Back to basics: the class layout                            | Stephen Dewhurst                 | Class layout         |
+| Back to basics: templates part 1&2                          | Andreas Fertig                   | Template             |
+| Back to basics: algebraic data types                        | Arthur O'Dwyer                   | Datatype             |
+| Back to basics: lambda expressions                          | Barbara Geller, Ansel Semersheim | Lambda               |
+| Back to basics: unit tests                                  | Ben Saks                         | Unit test            |
+| Back to basics: design patterns                             | Mike Shah                        | Design pattern       |
+| Back to basics: move semantics                              | David Olsen                      | Move semantics       |
+| Back to basics: cocurrency                                  | Arthur O'Dwyer                   | Cocurrency           |
+| Template metaprogramming: type traits part 1&2              | Jody Hagins                      | Template programming |
+| The future of C++ parallel and cocurrency safety guidelines | Michael Wong                     | Cocurrency           |
+| Modern software needs embeded modern C++ programming        | Michael Wong                     | Embedde C++          |
+| C++20 STL features: one year of development on Github       | Stephan T. Lavavej               | STL                  |
+| Practical memory pool based allocator for modern C++        | Misha Shalem                     | Allocator            |
+| Dynamic polymorphism with code injection and metaclass      | Sy Brand                         |
+| A relaxed guide to memory_order_relaxed                     | Pual E. McKenney                 | Memory order         |
+| Monoids, Monads and applicative functors                    | David Sankel                     | Functor              |
+| The networking TS from scratch: I/O objects                 | Roberts Leahy                    | Networking           |
+| C++ 20 ranges in practice                                   | Tristan Brindle                  | Ranges               |
+| Structure and interpretation of computer programs           | Conor Hoekstra                   | SICP                 |
+| Emprically Measuring, C++'s accidental complexity           | Herb Sutter                      | General              |
+| What is an ABI anf why is breaking it bad                   | Marshall Clow                    | ABI                  |
